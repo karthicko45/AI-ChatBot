@@ -1,0 +1,82 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #0f172a;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  padding: 16px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.chat-box {               
+  display: flex;
+  flex-direction: column;
+  flex: 1;                 
+  overflow-y: auto;        
+  padding: 10px;
+  gap: 5px;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 60%;
+  margin-bottom: 10px;
+  width: fit-content;
+}
+
+.message.user {
+  background: #0ea5e9;
+  color: #fff;
+  align-self: flex-end;
+}
+
+.message.bot {
+  background: #dbeafe;
+  color: #003cff;
+  align-self: flex-start;
+}
+
+.input-box {              
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background: #1e293b;
+  border-top: 1px solid #ccc;
+  position: sticky;
+  bottom: 0;
+}
+
+.input-box input {
+  align-self: center;
+  margin-left: 28%;
+  width: 400px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.send-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.send-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.send-btn:active {
+  transform: scale(0.95);
+}
